@@ -4,22 +4,22 @@
 #include <random>
 
 int main() {
-    // vector<int>Œ^‚Ì•Ï”v‚ğéŒ¾
+    // vector<int>å‹ã®å¤‰æ•°vã‚’å®£è¨€
     std::vector<int> v;
 
-    // v‚É1‚©‚ç10‚Ü‚Å‚Ì’l‚ğ“ü‚ê‚é
+    // vã«1ã‹ã‚‰10ã¾ã§ã®å€¤ã‚’å…¥ã‚Œã‚‹
     for (int i = 1; i <= 10; i++) {
         v.push_back(i);
     }
 
-    // —””­¶Ší‚ğì¬
+    // ä¹±æ•°ç™ºç”Ÿå™¨ã‚’ä½œæˆ
     std::random_device rd;
     std::mt19937 g(rd());
 
-    // shuffleŠÖ”‚Åv‚Ì—v‘f‚ğƒ‰ƒ“ƒ_ƒ€‚É•À‚×‘Ö‚¦‚é
+    // shuffleé–¢æ•°ã§vã®è¦ç´ ã‚’ãƒ©ãƒ³ãƒ€ãƒ ã«ä¸¦ã¹æ›¿ãˆã‚‹
     std::shuffle(v.begin(), v.end(), g);
 
-    // v‚Ì—v‘f‚ğo—Í‚·‚é
+    // vã®è¦ç´ ã‚’å‡ºåŠ›ã™ã‚‹
     for (int x : v) {
         std::cout << x << " ";
     }
