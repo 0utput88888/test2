@@ -1,1 +1,1 @@
-I will upload source code generated with chatgpt to github
+GPT-4 and Bing are the best partners:)
